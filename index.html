@@ -17,6 +17,7 @@
     </select>
     <h1>This is my website</h1>
     <p> </p>
+    <h2 id="descr">This is also my website</h2>
     <script>
         let choice = "";
         const select = document.querySelector('select');
@@ -28,8 +29,10 @@
         const choice = select.value;
 
         switch (choice) {
-            case 'white':
-            para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+            case 'black':
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+
             break;
             case 'rainy':
             para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
