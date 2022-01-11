@@ -13,7 +13,7 @@
         <option value="black">Black</option>
         <option value="purple">Purple</option>
         <option value="yellow">Yellow</option>
-        <option value="Psychedelic">Psychedelic</option>
+        <option value="psychedelic">Psychedelic</option>
     </select>
     <h1>This is my website</h1>
     <p> </p>
@@ -34,14 +34,21 @@
             document.body.style.color = "white";
 
             break;
-            case 'rainy':
-            para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+            case 'white':
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
             break;
-            case 'snowing':
-            para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+            case 'purple':
+            document.body.style.backgroundColor = "purple";
+            document.body.style.color = "white";
             break;
-            case 'overcast':
-            para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+            case 'yellow':
+            document.body.style.backgroundColor = "yellow";
+            document.body.style.color = "black";
+            break;
+            case 'psychedelic':
+            document.body.style.backgroundColor = "#33FF33";
+            document.body.style.color = "white";
             break;
             default:
             para.textContent = '';
