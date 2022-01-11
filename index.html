@@ -17,26 +17,25 @@
     </select>
     <h1>This is my website</h1>
     <p> </p>
-    <h2 id="descr">This is also my website</h2>
+  
     <script>
         let choice = "";
         const select = document.querySelector('select');
         const para = document.querySelector('p');
 
-        select.addEventListener('change', setWeather);
+        select.addEventListener('change', themeChanger);
 
-        function setWeather() {
+        function themeChanger() {
         const choice = select.value;
 
         switch (choice) {
-            case 'black':
-            document.body.style.backgroundColor = "black";
-            document.body.style.color = "white";
-
-            break;
             case 'white':
             document.body.style.backgroundColor = "white";
             document.body.style.color = "black";
+            break;
+            case 'black':
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
             break;
             case 'purple':
             document.body.style.backgroundColor = "purple";
@@ -47,9 +46,7 @@
             document.body.style.color = "black";
             break;
             case 'psychedelic':
-            
             document.body.style.backgroundImage = "url('psychedelic.img')";
-
             document.body.style.color = "black";
             break;
             default:
